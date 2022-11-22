@@ -6,12 +6,12 @@ How risky is the borrower?
 Given the borrower’s risk, should we lend him/her?
 In the modern era, the data science teams in the banks build predictive models using machine learning to predict how likely a client is going to default the loan when they only have a handful of information. Loan Prediction is a very common real-life problem that each retail bank faces at least once in its lifetime. If done correctly, it can save a lot of man hours at the end of a retail bank.
 
-Goal of this Project:
+# Goal of this Project:
 Dream Housing Finance company deals in all home loans. They have presence across all urban, semi urban, and rural areas. Customer first apply for home loan after that company validates the customer eligibility for loan. Company wants to automate the loan eligibility process (real time) based on customer detail provided while filling online application form.
 
 To automate this process, they have given a problem to identify the customers’ segments, those are eligible for loan amount so that they can specifically target these customers. The goal of this project is to predict whether a loan would be approved or not.
 
-Feature Engineering:
+# Feature Engineering:
 Based on the domain knowledge, we can come up with new features that might affect the target variable. We can come up with following new three features:
 
 Total Income: As evident from Exploratory Data Analysis, we will combine the Applicant Income and Coapplicant Income. If the total income is high, chances of loan approval might also be high.
@@ -22,7 +22,7 @@ Balance Income: This is the income left after the EMI has been paid. Idea behind
 
 Let us now drop the columns which we used to create these new features. Reason for doing this is, the correlation between those old features and these new features will be very high and logistic regression assumes that the variables are not highly correlated. We also want to remove the noise from the dataset, so removing correlated features will help in reducing the noise too.
 
-The following actions were taken to achieve this result:
+# The following actions were taken to achieve this result:
 
 • Explored the dataset to understand the data.
 
